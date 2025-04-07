@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ LOCO CABANA-PERU - Servicios Profesionales de DJ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --neon-pink: #ff00ff;
+            --neon-purple: #9d00ff;
+            --dark-bg: #0a0a0a;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark-bg);
+            color: white;
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .neon-text {
+            text-shadow: 0 0 5px var(--neon-pink), 0 0 10px var(--neon-pink);
+        }
+        
+        .neon-border {
+            border: 2px solid var(--neon-pink);
+            box-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-purple);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .service-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(157, 0, 255, 0.5);
+        }
+        
+        .event-icon {
+            transition: transform 0.3s;
+        }
+        
+        .event-icon:hover {
+            transform: scale(1.2);
+        }
+        
+        .social-icon {
+            transition: all 0.3s;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.2);
+            text-shadow: 0 0 10px var(--neon-pink);
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s, transform 0.6s;
+        }
+        
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-black bg-opacity-90 backdrop-blur-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl md:text-3xl font-bold neon-text text-pink-500">DJ LOCO CABANA-PERU</h1>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#inicio" class="text-white hover:text-pink-500 transition duration-300">Inicio</a></li>
+                        <li><a href="#servicios" class="text-white hover:text-pink-500 transition duration-300">Servicios</a></li>
+                        <li><a href="#musica" class="text-white hover:text-pink-500 transition duration-300">Música</a></li>
+                        <li><a href="#contacto" class="text-white hover:text-pink-500 transition duration-300">Contacto</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero min-h-screen flex items-center justify-center text-center px-4 fade-in">
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 neon-text text-pink-500">¡Lleva la fiesta al siguiente nivel con DJ LOCO CABANA PERU!</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Experiencia, profesionalismo y la mejor selección musical para tu evento</p>
+            <a href="https://wa.me/51927450053" class="inline-block bg-pink-600 hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-full text-xl transition duration-300 transform hover:scale-105 neon-border">
+                <i class="fab fa-whatsapp mr-2"></i> Contáctame por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-20 px-4 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 neon-text text-purple-500 scroll-reveal">¿Qué incluye el servicio de DJ?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="service-card bg-gray-800 p-8 rounded-lg neon-border scroll-reveal">
+                    <div class="text-pink-500 text-4xl mb-4">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Parlante de 15 pulgadas</h3>
+                    <p class="text-gray-300">Sonido nítido y potente para que tu evento tenga la mejor calidad de audio.</p>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="service-card bg-gray-800 p-8 rounded-lg neon-border scroll-reveal" style="transition-delay: 0.1s">
+                    <div class="text-pink-500 text-4xl mb-4">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Controladora de DJ Profesional</h3>
+                    <p class="text-gray-300">Equipo profesional para mezclas perfectas y transiciones suaves.</p>
+                </div>
+                
+                <!-- Servicio 3 -->
+                <div class="service-card bg-gray-800 p-8 rounded-lg neon-border scroll-reveal" style="transition-delay: 0.2s">
+                    <div class="text-pink-500 text-4xl mb-4">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">DJ profesional</h3>
+                    <p class="text-gray-300">Amplia experiencia en todo tipo de eventos y celebraciones.</p>
+                </div>
+                
+                <!-- Servicio 4 -->
+                <div class="service-card bg-gray-800 p-8 rounded-lg neon-border scroll-reveal" style="transition-delay: 0.3s">
+                    <div class="text-pink-500 text-4xl mb-4">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">2 Micrófonos</h3>
+                    <p class="text-gray-300">Incluye cableado y extensiones para anuncios y participación del público.</p>
+                </div>
+                
+                <!-- Servicio 5 -->
+                <div class="service-card bg-gray-800 p-8 rounded-lg neon-border scroll-reveal" style="transition-delay: 0.4s">
+                    <div class="text-pink-500 text-4xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">30 Minutos de Instalación</h3>
+                    <p class="text-gray-300">Montaje rápido y eficiente para que todo esté listo a tiempo.</p>
+                </div>
+                
+                <!-- Servicio 6 -->
+                <div class="service-card bg-gray-800 p-8 rounded-lg neon-border scroll-reveal" style="transition-delay: 0.5s">
+                    <div class="text-pink-500 text-4xl mb-4">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Mezclas en vivo</h3>
+                    <p class="text-gray-300">Adaptación musical a pedido del cliente para personalizar tu evento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservas Section -->
+    <section class="py-20 px-4 bg-black">
+        <div class="container mx-auto max-w-4xl text-center scroll-reveal">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 neon-text text-pink-500">¿Cómo reservo el servicio de DJ?</h2>
+            <p class="text-xl text-gray-300 mb-10">
+                Para reservar tu evento, contáctanos directamente por WhatsApp y te brindaremos una cotización personalizada según el tipo de celebración, duración y ubicación. Ofrecemos precios accesibles, pero siempre priorizando la calidad musical y profesionalismo en cada presentación.
+            </p>
+            <a href="https://wa.me/51927450053" class="inline-block bg-purple-600 hover:bg-pink-700 text-white font-bold py-4 px-8 rounded-full text-xl transition duration-300 transform hover:scale-105 neon-border">
+                <i class="fas fa-calendar-check mr-2"></i> ¡Solicita tu cotización ahora!
+            </a>
+        </div>
+    </section>
+
+    <!-- Eventos Section -->
+    <section class="py-20 px-4 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 neon-text text-purple-500 scroll-reveal">¿Qué tipo de eventos atienden?</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                <!-- Evento 1 -->
+                <div class="text-center p-4 scroll-reveal">
+                    <div class="event-icon text-4xl text-pink-500 mb-3">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3 class="font-bold">Bodas</h3>
+                </div>
+                
+                <!-- Evento 2 -->
+                <div class="text-center p-4 scroll-reveal" style="transition-delay: 0.1s">
+                    <div class="event-icon text-4xl text-pink-500 mb-3">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3 class="font-bold">Fiestas infantiles</h3>
+                </div>
+                
+                <!-- Evento 3 -->
+                <div class="text-center p-4 scroll-reveal" style="transition-delay: 0.2s">
+                    <div class="event-icon text-4xl text-pink-500 mb-3">
+                        <i class="fas fa-bible"></i>
+                    </div>
+                    <h3 class="font-bold">Bautizos</h3>
+                </div>
+                
+                <!-- Evento 4 -->
+                <div class="text-center p-4 scroll-reveal" style="transition-delay: 0.3s">
+                    <div class="event-icon text-4xl text-pink-500 mb-3">
+                        <i class="fas fa-wine-glass-alt"></i>
+                    </div>
+                    <h3 class="font-bold">Primera comunión</h3>
+                </div>
+                
+                <!-- Evento 5 -->
+                <div class="text-center p-4 scroll-reveal" style="transition-delay: 0.4s">
+                    <div class="event-icon text-4xl text-pink-500 mb-3">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3 class="font-bold">Baby shower</h3>
+                </div>
+                
+                <!-- Evento 6 -->
+                <div class="text-center p-4 scroll-reveal" style="transition-delay: 0.5s">
+                    <div class="event-icon text-4xl text-pink-500 mb-3">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="font-bold">Cumpleaños</h3>
+                </div>
+                
+                <!-- Evento 7 -->
+                <div class="text-center p-4 scroll-reveal" style="transition-delay: 0.6s">
+                    <div class="event-icon text-4xl text-pink-500 mb-3">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="font-bold">Aniversarios</h3>
+                </div>
+                
+                <!-- Evento 8 -->
+                <div class="text-center p-4 scroll-reveal" style="transition-delay: 0.7s">
+                    <div class="event-icon text-4xl text-pink-500 mb-3">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3 class="font-bold">Fiestas de fin de año</h3>
+                </div>
+                
+                <!-- Evento 9 -->
+                <div class="text-center p-4 scroll-reveal" style="transition-delay: 0.8s">
+                    <div class="event-icon text-4xl text-pink-500 mb-3">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="font-bold">Eventos corporativos</h3>
+                </div>
+                
+                <!-- Evento 10 -->
+                <div class="text-center p-4 scroll-reveal" style="transition-delay: 0.9s">
+                    <div class="event-icon text-4xl text-pink-500 mb-3">
+                        <i class="fas fa-glass-martini-alt"></i>
+                    </div>
+                    <h3 class="font-bold">Despedidas de soltero/a</h3>
+                </div>
+                
+                <!-- Evento 11 -->
+                <div class="text-center p-4 scroll-reveal" style="transition-delay: 1.0s">
+                    <div class="event-icon text-4xl text-pink-500 mb-3">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3 class="font-bold">Eventos deportivos</h3>
+                </div>
+                
+                <!-- Evento 12 -->
+                <div class="text-center p-4 scroll-reveal" style="transition-delay: 1.1s">
+                    <div class="event-icon text-4xl text-pink-500 mb-3">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="font-bold">Graduaciones</h3>
+                </div>
+                
+                <!-- Evento 13 -->
+                <div class="text-center p-4 scroll-reveal" style="transition-delay: 1.2s">
+                    <div class="event-icon text-4xl text-pink-500 mb-3">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="font-bold">Quince años</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Distritos Section -->
+    <section class="py-20 px-4 bg-black">
+        <div class="container mx-auto max-w-4xl text-center scroll-reveal">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 neon-text text-pink-500">¿Qué distritos atienden?</h2>
+            <p class="text-xl text-gray-300 mb-6">
+                Llegamos a todos los distritos de Lima Metropolitana, especialmente:
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mt-6">
+                <span class="px-4 py-2 bg-gray-800 rounded-full text-pink-400">Los Olivos</span>
+                <span class="px-4 py-2 bg-gray-800 rounded-full text-pink-400">Puente Piedra</span>
+                <span class="px-4 py-2 bg-gray-800 rounded-full text-pink-400">Independencia</span>
+                <span class="px-4 py-2 bg-gray-800 rounded-full text-pink-400">Comas</span>
+                <span class="px-4 py-2 bg-gray-800 rounded-full text-pink-400">Lima Norte</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Métodos de Pago Section -->
+    <section class="py-20 px-4 bg-gray-900">
+        <div class="container mx-auto max-w-4xl text-center scroll-reveal">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 neon-text text-purple-500">¿Aceptan todo tipo de métodos de pago?</h2>
+            <p class="text-xl text-gray-300 mb-10">
+                Así es, aceptamos diferentes formas de pago para tu comodidad:
+            </p>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-money-bill-wave text-4xl text-green-500 mb-2"></i>
+                    <span>Efectivo</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-university text-4xl text-blue-500 mb-2"></i>
+                    <span>Transferencia bancaria</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-mobile-alt text-4xl text-yellow-500 mb-2"></i>
+                    <span>Yape</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-wallet text-4xl text-purple-500 mb-2"></i>
+                    <span>Plin</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Música Section -->
+    <section id="musica" class="py-20 px-4 bg-black">
+        <div class="container mx-auto max-w-4xl text-center scroll-reveal">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 neon-text text-pink-500">
+                <i class="fas fa-music mr-2"></i> Venta de música y ediciones personalizadas
+            </h2>
+            <p class="text-xl text-gray-300 mb-10">
+                Compra y descarga música o ediciones para coreografías, bailes escolares, universidades y eventos en nuestra tienda:
+            </p>
+            <a href="http://www.vivarfa.com" target="_blank" class="inline-block bg-purple-600 hover:bg-pink-700 text-white font-bold py-4 px-8 rounded-full text-xl transition duration-300 transform hover:scale-105 neon-border">
+                <i class="fas fa-shopping-cart mr-2"></i> Visitar Tienda Musical
+            </a>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-20 px-4 bg-gray-900">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 neon-text text-purple-500 scroll-reveal">Contacto Directo</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Formulario -->
+                <div class="bg-gray-800 p-8 rounded-lg neon-border scroll-reveal">
+                    <h3 class="text-xl font-bold mb-6">Envíanos un mensaje</h3>
+                    <form id="contactForm" action="https://formsubmit.co/avivarfa@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+                        
+                        <div class="mb-4">
+                            <label for="nombre" class="block text-gray-300 mb-2">Nombre</label>
+                            <input type="text" id="nombre" name="name" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:border-pink-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-300 mb-2">Correo</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:border-pink-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="mensaje" class="block text-gray-300 mb-2">Mensaje</label>
+                            <textarea id="mensaje" name="message" rows="4" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:border-pink-500" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-pink-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded transition duration-300">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Info Contacto -->
+                <div class="scroll-reveal" style="transition-delay: 0.2s">
+                    <div class="bg-gray-800 p-8 rounded-lg neon-border mb-8">
+                        <h3 class="text-xl font-bold mb-6">Información de contacto</h3>
+                        <div class="flex items-start mb-4">
+                            <i class="fab fa-whatsapp text-2xl text-green-500 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">WhatsApp</h4>
+                                <p class="text-gray-300">927 450 053</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <i class="fas fa-map-marker-alt text-2xl text-red-500 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Ubicación</h4>
+                                <p class="text-gray-300">Lima - Perú</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-8 rounded-lg neon-border">
+                        <h3 class="text-xl font-bold mb-6">Síguenos en redes</h3>
+                        <div class="flex justify-center space-x-6">
+                            <a href="https://www.facebook.com/alex.vivarfa" target="_blank" class="social-icon text-3xl text-blue-400">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/dj.loco.cabana_peru" target="_blank" class="social-icon text-3xl text-pink-400">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@DJLOCOCABANAPERU" target="_blank" class="social-icon text-3xl text-red-500">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-black text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-gray-400">© 2025 DJ LOCO CABANA-PERU – Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/51927450053" class="fixed bottom-6 right-6 bg-green-500 text-white text-2xl p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll Reveal Script -->
+    <script>
+        // Scroll Reveal Animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollReveals = document.querySelectorAll('.scroll-reveal');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            scrollReveals.forEach(item => {
+                observer.observe(item);
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Mobile menu toggle (you can expand this functionality)
+            const mobileMenuButton = document.querySelector('button.md\\:hidden');
+            mobileMenuButton.addEventListener('click', function() {
+                // Add mobile menu functionality here
+                alert('Menú móvil - Implementar funcionalidad completa');
+            });
+
+            // Form submission handling
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    // You can add additional form validation here if needed
+                    // Form will be submitted to FormSubmit.co which will forward to your email
+                });
+            }
+        });
+    </script>
+</body>
+</html>
